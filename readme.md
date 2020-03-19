@@ -58,7 +58,7 @@ total 278G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/normal | wc -l
 159
 
-#Image patch extract
+# Image patch extract
 
 location of the bouding box
 
