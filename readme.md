@@ -5,33 +5,33 @@
 # 1 Image patch extraction
 The following commands launch Son of Grid Engine (SGE) jobs to extract, group patches in HDF5 files and create a lookup tables for every HDF5 file. 
 ## 1.1 Without color normalization
-qsub split_main.sh ./config_testing.txt
-qsub split_main.sh ./config_normal.txt
-qsub split_main.sh ./config_tumor.txt
+qsub split_main.sh ./config_testing.txt  
+qsub split_main.sh ./config_normal.txt  
+qsub split_main.sh ./config_tumor.txt  
 
 ## 1.2 With color normalization
-qsub split_main.sh ./config_testing_cn_true.txt
-qsub split_main.sh ./config_normal.txt
-qsub split_main.sh ./config_tumor.txt
+qsub split_main.sh ./config_testing_cn_true.txt  
+qsub split_main.sh ./config_normal.txt  
+qsub split_main.sh ./config_tumor.txt  
 
 ## 1.3 Creating lookup tables
-bash create_lookup_grp.sh ./config_testing.txt
-bash create_lookup_grp.sh ./config_normal.txt
-bash create_lookup_grp.sh ./config_tumor.txt
+bash create_lookup_grp.sh ./config_testing.txt  
+bash create_lookup_grp.sh ./config_normal.txt  
+bash create_lookup_grp.sh ./config_tumor.txt  
 
 The lookup tables are created only once. 
 
 # 2 Prediction
 The following commands launch Son of SGE jobs to generate prediction matrices.
 ## 2.1 With color normalization
-qsub process_main.sh ./config_testing_cn_true.txt
-qsub process_main.sh ./config_normal_cn_true.txt
-qsub process_main.sh ./config_tumor_cn_true.txt
+qsub process_main.sh ./config_testing_cn_true.txt  
+qsub process_main.sh ./config_normal_cn_true.txt  
+qsub process_main.sh ./config_tumor_cn_true.txt  
 
 ## 2.2 Without color normalization 
-qsub process_main.sh ./config_testing.txt
-qsub process_main.sh ./config_normal.txt
-qsub process_main.sh ./config_tumor.txt
+qsub process_main.sh ./config_testing.txt  
+qsub process_main.sh ./config_normal.txt  
+qsub process_main.sh ./config_tumor.txt  
 
 # 3 Heatmap stitching
 After the predictions matrices have been generated the following SGE job could be launched to genertae heatmaps.
