@@ -1,6 +1,6 @@
 [Normal](#normal)
 
-[Image patch extract](#image-patch-extract)
+1. [Image patch extract](#image-patch-extract)
 
 
 2. prediction 
@@ -60,13 +60,12 @@ total 278G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/normal | wc -l
 159
 
-# Image patch extract
 <a name="tasks">
    my tasks
 </a>
 
 <a name="image-patch-extract">
-Image patch extract
+# 1. Image patch extract
 </a>
 
 location of the bouding box
