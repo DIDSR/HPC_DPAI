@@ -1,6 +1,6 @@
 [Normal](#normal)
 
-1. image patch extract 
+[1. image patch extract](1.-image-patch-extract)
 2. prediction 
 3. heatmap stitching
 
