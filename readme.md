@@ -1,6 +1,6 @@
 [Normal](#normal)
 
-[1. image patch extract](1-image-patch-extract)
+[Image patch extract](image-patch-extract)
 2. prediction 
 3. heatmap stitching
 
@@ -56,7 +56,7 @@ total 278G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/normal | wc -l
 159
 
-# 1 image patch extract
+# Image patch extract
 
 location of the bouding box
 
