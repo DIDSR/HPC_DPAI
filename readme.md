@@ -1,6 +1,6 @@
 [Normal](#normal)
 
-[image patch extract](image-patch-extract)
+[image patch extract](Image-patch-extract)
 
 
 2. prediction 
