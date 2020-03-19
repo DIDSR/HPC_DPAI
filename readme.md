@@ -1,7 +1,6 @@
 [Normal](#normal)
 
-[Image patch extract](Image-patch-extract)
-[Image patch extract](#mage patch extract)
+[Image patch extract](#image-patch-extract)
 
 
 2. prediction 
@@ -66,7 +65,7 @@ total 278G
    my tasks
 </a>
 
-<a name="image patch extract">
+<a name="image-patch-extract">
 Image patch extract
 </a>
 
