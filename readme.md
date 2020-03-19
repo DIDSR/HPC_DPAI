@@ -1,7 +1,7 @@
 [Normal](#normal)
 
-[1 Image patch extract](#1-image-patch-extract)
-[2 Prediction](#2-prediction) 
+[1 Image patch extract](#1-image-patch-extract)   
+[2 Prediction](#2-prediction)  
 [3 Heatmap stitching](3-heatmap-stitching)
 
 # 1 Image patch extract
