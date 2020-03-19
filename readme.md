@@ -50,7 +50,7 @@ total 219G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/tumor | wc -l
 111
 
-#NORMAL
+# NORMAL
 [mikem@betsy02 split_wsi]$ ls -alsh /scratch/wxc4/CAMELYON16-training/normal | less
 total 278G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/normal | wc -l
