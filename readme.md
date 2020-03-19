@@ -1,26 +1,32 @@
 [Normal](#normal)
 
 [1 Image patch extract](#1-image-patch-extract)
+[2 Prediction](#2-prediction) 
+[3 Heatmap stitching](3-heatmap-stitching)
 
-2. prediction 
-3. heatmap stitching
+# 1 Image patch extract
+The following commands launch Son of Grid Engine (SGE) jobs to extract, group patches in HDF5 files and create a lookup tables for every HDF5 file. 
+## Without color normalization
+qsub split_main.sh ./config_testing.txt
+qsub split_main.sh ./config_normal.txt
+qsub split_main.sh ./config_tumor.txt
 
-[tasks](#tasks)
+## With color normalization
+qsub split_main.sh ./config_testing_cn_true.txt
+qsub split_main.sh ./config_normal.txt
+qsub split_main.sh ./config_tumor.txt
 
-My Hello, this is some text to fill in this, [here](#place-3), is a link to the second place.
-My Hello, this is some text to fill in this, [here](#place-2), is a link to the second place.
+## Creating lookup tables
+bash create_lookup_grp.sh ./config_testing.txt
+bash create_lookup_grp.sh ./config_normal.txt
+bash create_lookup_grp.sh ./config_tumor.txt
 
-## Title
+The lookup tables are created only once. 
 
-### Place 1
+# 2 Prediction
 
-Hello, this is some text to fill in this, [here](#place-2), is a link to the second place.
-
-### Place 2
-
-Place one has the fun times of linking here, but I can also link back [here](#place-1).
-
-# Place 3
+# 3 Heatmap stitching
+ 
  
 qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953
 
@@ -70,11 +76,6 @@ total 278G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/normal | wc -l
 159
 
-<a name="tasks">
-   my tasks
-</a>
-
-# 1 Image patch extract
 
 location of the bouding box
 
