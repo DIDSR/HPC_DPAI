@@ -1,6 +1,6 @@
 [Normal](#normal)
 
-1. [Image patch extract](#image-patch-extract)
+[Image patch extract](#image-patch-extract)
 
 2. prediction 
 3. heatmap stitching
@@ -74,9 +74,7 @@ total 278G
    my tasks
 </a>
 
-<a name="image-patch-extract">
-# 1. Image patch extract
-</a>
+# Image patch extract
 
 location of the bouding box
 
