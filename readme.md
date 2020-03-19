@@ -2,7 +2,7 @@
 
 [1 Image patch extract](#1-image-patch-extract)   
 [2 Prediction](#2-prediction)  
-[3 Heatmap stitching](3-heatmap-stitching)
+[3 Heatmap stitching](#3-heatmap-stitching)
 
 # 1 Image patch extract
 The following commands launch Son of Grid Engine (SGE) jobs to extract, group patches in HDF5 files and create a lookup tables for every HDF5 file. 
