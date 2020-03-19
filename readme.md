@@ -7,7 +7,7 @@
 
 [tasks](#tasks)
 
-
+My Hello, this is some text to fill in this, [here](#place-3), is a link to the second place.
 My Hello, this is some text to fill in this, [here](#place-2), is a link to the second place.
 
 ## Title
@@ -20,7 +20,7 @@ Hello, this is some text to fill in this, [here](#place-2), is a link to the sec
 
 Place one has the fun times of linking here, but I can also link back [here](#place-1).
 
-
+# Place 3
  
 qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953
 
