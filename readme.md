@@ -1,3 +1,13 @@
+[Normal](#normal)
+
+1. image patch extract 
+2. prediction 
+3. heatmap stitching
+
+
+
+
+# 1. image patch extract 
 qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953
 
 # For color normalization True
@@ -23,7 +33,7 @@ qsub split_main.sh ./config_tumor.txt
 bash create_lookup_grp.sh ./config_tumor.txt
 qsub process_main.sh ./config_tumor.txt
 
-
+#Real Cool Heading
 
 qsub split_main.sh ./config_testing_wc.txt
 
@@ -40,7 +50,7 @@ total 219G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/tumor | wc -l
 111
 
-# NORMAL
+#NORMAL
 [mikem@betsy02 split_wsi]$ ls -alsh /scratch/wxc4/CAMELYON16-training/normal | less
 total 278G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/normal | wc -l
