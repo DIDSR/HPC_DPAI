@@ -6,17 +6,17 @@
 
 # 1 Image patch extract
 The following commands launch Son of Grid Engine (SGE) jobs to extract, group patches in HDF5 files and create a lookup tables for every HDF5 file. 
-## Without color normalization
+## 1.1 Without color normalization
 qsub split_main.sh ./config_testing.txt
 qsub split_main.sh ./config_normal.txt
 qsub split_main.sh ./config_tumor.txt
 
-## With color normalization
+## 1.2 With color normalization
 qsub split_main.sh ./config_testing_cn_true.txt
 qsub split_main.sh ./config_normal.txt
 qsub split_main.sh ./config_tumor.txt
 
-## Creating lookup tables
+## 1.3 Creating lookup tables
 bash create_lookup_grp.sh ./config_testing.txt
 bash create_lookup_grp.sh ./config_normal.txt
 bash create_lookup_grp.sh ./config_tumor.txt
@@ -24,38 +24,21 @@ bash create_lookup_grp.sh ./config_tumor.txt
 The lookup tables are created only once. 
 
 # 2 Prediction
-
-# 3 Heatmap stitching
- 
- 
-qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953
-
-# For color normalization True
+The following commands launch Son of SGE jobs to generate prediction matrices.
+## 2.1 With color normalization
 qsub process_main.sh ./config_testing_cn_true.txt
 qsub process_main.sh ./config_normal_cn_true.txt
 qsub process_main.sh ./config_tumor_cn_true.txt
 
-# For color normalization False
-* qsub process_main.sh ./config_testing.txt
-qsub process_main.sh ./config_normal.txt
-qsub process_main.sh ./config_tumor.txt
-
-
-qsub split_main.sh ./config_testing.txt
-bash create_lookup_grp.sh ./config_testing.txt
+## 2.2 Without color normalization 
 qsub process_main.sh ./config_testing.txt
-
-qsub split_main.sh ./config_normal.txt
-bash create_lookup_grp.sh ./config_normal.txt
 qsub process_main.sh ./config_normal.txt
-
-qsub split_main.sh ./config_tumor.txt
-bash create_lookup_grp.sh ./config_tumor.txt
 qsub process_main.sh ./config_tumor.txt
 
-#Real Cool Heading
+# 3 Heatmap stitching
+After the predictions matrices have been generated the following SGE job could be launched to genertae heatmaps.
+qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953
 
-qsub split_main.sh ./config_testing_wc.txt
 
 
 # TESTING
