@@ -1,13 +1,13 @@
 [Normal](#normal)
 
-[1. image patch extract](1.-image-patch-extract)
+[1. image patch extract](1-image-patch-extract)
 2. prediction 
 3. heatmap stitching
 
 
 
 
-# 1. image patch extract 
+ 
 qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953
 
 # For color normalization True
@@ -56,7 +56,7 @@ total 278G
 [mikem@betsy02 split_wsi]$ ls -1 /scratch/wxc4/CAMELYON16-training/normal | wc -l
 159
 
-
+# 1 image patch extract
 
 location of the bouding box
 
