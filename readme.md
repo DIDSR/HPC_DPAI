@@ -21,7 +21,7 @@ The lookup tables are created only once and used at [Prediction](#2-prediction) 
 
 # 2 Prediction
 - Additionally adjust configuration parameters in files, *config_testing_cn_true.txt*, *config_normal_cn_true.txt*, *config_tumor_cn_true.txt*.
-- Run the below commands to launch SGE jobs to generate prediction matrices.
+- Run commands listed in the below subsections to launch SGE jobs to generate prediction matrices.
 ## 2.1 With color normalization
 - qsub process_main.sh ./config_testing_cn_true.txt  
 - qsub process_main.sh ./config_normal_cn_true.txt  
