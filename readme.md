@@ -22,7 +22,7 @@
 - bash create_lookup_grp.sh ./config_normal.txt  
 - bash create_lookup_grp.sh ./config_tumor.txt  
 
-The lookup tables are created only once. 
+The lookup tables are created only once and used at [Prediction](#2-prediction) stage for launching array job tasks. These tasks are run in parallel and scalable manner - if there are not enough resourcs to running all tasks then they are queued up automatically and started as resources become available. Each task processes only one group. 
 
 # 2 Prediction
 Run the below commands to launch SGE jobs to generate prediction matrices.
