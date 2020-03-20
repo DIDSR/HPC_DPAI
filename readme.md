@@ -35,11 +35,11 @@ The following commands launch Son of SGE jobs to generate prediction matrices.
 - qsub process_main.sh ./config_tumor.txt  
 
 # 3 Heatmap stitching
-After the predictions matrices have been generated an SGE job using heatmap_main.sh SGE scrip could be launched to genertae heatmaps. Two arguments for this launch are: a) type of the slides (test, normal or tumor); b) the root directory of the results, like in below ecxample run:  
+After the predictions matrices have been generated an SGE job using *heatmap_main.sh* SGE scrip could be launched to genertae heatmaps. Two arguments for this launch are: a) type of the slides (test, normal or tumor); b) the root directory of the results, like in below ecxample run:  
 - qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953
 
 # 4 Retreiving run-time statistics
-In time_all_stats_pred.sh file adjust job results root directory, like:  
+In *time_all_stats_pred.sh* file adjust job results root directory, like below:  
 - DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_False/normal_wnorm_448_400_7691563  
 Then run:  
 - time bash ./time_all_stats_pred.sh  
