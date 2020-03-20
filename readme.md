@@ -5,13 +5,13 @@
 
 # 1 Image patch extraction
 The following commands launch Son of Grid Engine (SGE) jobs to extract, group patches in HDF5 files and create a lookup tables for every HDF5 file. 
-## 1.1 Without color normalization
-qsub split_main.sh ./config_testing.txt  
-qsub split_main.sh ./config_normal.txt  
-qsub split_main.sh ./config_tumor.txt  
-
-## 1.2 With color normalization
+## 1.1 With color normalization
 qsub split_main.sh ./config_testing_cn_true.txt  
+qsub split_main.sh ./config_normal_cn_true.txt  
+qsub split_main.sh ./config_tumor_cn_true.txt  
+
+## 1.2 Without color normalization
+qsub split_main.sh ./config_testing.txt  
 qsub split_main.sh ./config_normal.txt  
 qsub split_main.sh ./config_tumor.txt  
 
@@ -41,7 +41,7 @@ qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_T
 # 4 Retreiving run-time statistics
 In time_all_stats_pred.sh file adjust job results root directory, like:  
 DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_False/normal_wnorm_448_400_7691563  
-Then run:
+Then run:  
 time bash ./time_all_stats_pred.sh  
 
 
