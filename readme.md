@@ -7,17 +7,12 @@
 # 1 Image patch extraction
 - Adjust configuration parameters in files, *config_testing_cn_true.txt*, *config_normal_cn_true.txt*, *config_tumor_cn_true.txt*, *config_testing.txt*, *config_normal.txt* and *config_tumor.txt*.
 - Run the commands listed in the following subsections to launch Son of Grid Engine (SGE) jobs to extract, group patches in HDF5 files and create a lookup table for every HDF5 file. 
-## 1.1 With color normalization
-- qsub split_main.sh ./config_testing_cn_true.txt  
-- qsub split_main.sh ./config_normal_cn_true.txt  
-- qsub split_main.sh ./config_tumor_cn_true.txt  
-
-## 1.2 Without color normalization
+## 1.2 Extract and group
 - qsub split_main.sh ./config_testing.txt  
 - qsub split_main.sh ./config_normal.txt  
 - qsub split_main.sh ./config_tumor.txt  
 
-## 1.3 Creating lookup tables
+## 1.3 Creat lookup tables
 - bash create_lookup_grp.sh ./config_testing.txt  
 - bash create_lookup_grp.sh ./config_normal.txt  
 - bash create_lookup_grp.sh ./config_tumor.txt  
