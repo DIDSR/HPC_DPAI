@@ -48,7 +48,7 @@ In *time_all_stats_pred.sh* file adjust job results root directory, DIR and slid
 Then run:  
 - time bash ./time_all_stats_pred.sh
 ## 4.2 Wall-Clock time
-In *time_all_stats_pred.sh* file adjust job results root directory, DIR and slides type, PREFIX (normal, test or tumor), like below:  
+In *wall_clock_time_stats_pred.sh* file adjust job results root directory, DIR and slides type, PREFIX (normal, test or tumor), like below:  
 - DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_False/testing_wnorm_448_400_7694088  
 - PREFIX=test  
 Then run:  
