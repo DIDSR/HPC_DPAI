@@ -25,7 +25,7 @@ The lookup tables are created only once and used at [Prediction](#2-prediction) 
 - Run commands listed in the below subsections to launch SGE jobs to generate prediction matrices.
 ## 2.1 With color normalization
 - qsub process_main.sh ./config_testing_cn_true.txt  
--- *process_main.sh* in turn submits *process_array.sh* which runs *process_images_grp_normalization_wli.py* in array jobs generated for every slide.
+-- *process_main.sh* in turn submits *process_array.sh* which in turn runs *process_images_grp_normalization_wli.py* in array jobs generated for every slide.
 - qsub process_main.sh ./config_normal_cn_true.txt  
 - qsub process_main.sh ./config_tumor_cn_true.txt  
 
