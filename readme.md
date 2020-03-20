@@ -25,7 +25,7 @@
 The lookup tables are created only once. 
 
 # 2 Prediction
-The following commands launch SGE jobs to generate prediction matrices.
+Run the below commands to launch SGE jobs to generate prediction matrices.
 ## 2.1 With color normalization
 - qsub process_main.sh ./config_testing_cn_true.txt  
 - qsub process_main.sh ./config_normal_cn_true.txt  
