@@ -43,7 +43,7 @@ After the predictions matrices have been generated an SGE job using *heatmap_mai
 # 4 Retreiving run-time statistics
 In *time_all_stats_pred.sh* file adjust job results root directory, DIR and slides type, PREFIX (normal, test or tumor), like below:  
 - DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_False/normal_wnorm_448_400_7691563  
-- PREFIX=normal
+- PREFIX=normal  
 Then run:  
 - time bash ./time_all_stats_pred.sh    
 
