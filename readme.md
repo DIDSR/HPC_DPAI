@@ -52,6 +52,6 @@ In *wall_clock_time_stats_pred.sh* file adjust job results root directory, DIR a
 - DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_False/testing_wnorm_448_400_7694088  
 - PREFIX=test  
 Then run:  
-- time bash ./time_all_stats_pred.sh  
+- time bash ./wall_clock_time_stats_pred.sh  
 
 
