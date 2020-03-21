@@ -13,7 +13,7 @@
 - qsub split_main.sh ./config_normal.txt  
 - qsub split_main.sh ./config_tumor.txt  
 
-## 1.3 Creat lookup tables
+## 1.3 Create lookup tables
 - bash create_lookup_grp.sh ./config_testing.txt  
 - bash create_lookup_grp.sh ./config_normal.txt  
 - bash create_lookup_grp.sh ./config_tumor.txt  
