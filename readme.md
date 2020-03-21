@@ -21,10 +21,10 @@
 The lookup tables are created only once and used at [Prediction](#2-prediction) stage for launching array job tasks. These tasks are run in parallel and scalable manner - if there are not enough resourcs for running all tasks then they are queued up automatically and started as resources become available. Each task processes only one group. 
 
 ## 1.3 Retreiving wall-clock time statistics for extraction and grouping
-Run *time_stats_sg_V2.sh* Linux scrip with two arguments, type of slides (test, normal or tumor) and the root directory of the results:
+Run *time_stats_sg_V2.sh* Linux scrip with two arguments: a) type of slides (test, normal or tumor) and b) the root directory of the results:
 - time bash time_stats_sg_V2.sh [test | normal | tumor] ROOT_DIR  
 
-As an example run:  
+An example run:  
 - time bash wall_clock_time_split_group_V2.sh test /scratch/mikem/UserSupport/weizhe.li/runs_split_group/448_400_7691440  
 
 # 2 Prediction
