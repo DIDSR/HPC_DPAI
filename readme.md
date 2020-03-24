@@ -1,4 +1,5 @@
-[1 Image patch extraction](#1-image-patch-extraction)   
+[1 Image patch extraction](#1-image-patch-extraction)  
+[1.3 Retreiving wall-clock time statistics for extraction and grouping](#1.3-Retreiving-wall-clock-time-statistics-for-extraction-and-grouping)  
 [2 Prediction](#2-prediction)  
 [3 Heatmap stitching](#3-heatmap-stitching)  
 [4 Retreiving run-time statistics for prediction](#4-Retreiving-run-time-statistics-for-prediction)  
