@@ -44,7 +44,7 @@ An example run:
 # 3 Heatmap stitching
 After the predictions matrices have been generated an SGE job using *heatmap_main.sh* SGE scrip could be launched to genertae heatmaps. Two arguments for this launch are: a) type of the slides (test, normal or tumor); b) the root directory of the results, like in below example run:  
 - qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953  
--- *heatmap_main.sh* in turn calls *heatmap_arr.sh* which runs *heatmap_assembly.py* for the heatmap stitching for all slides in parallel/scalable manner.
+-- *heatmap_main.sh* in turn calls *heatmap_arr.sh* which runs *heatmap_assembly.py* for the heatmap stitching of all slides in parallel/scalable manner.
 # 4 Retreiving run-time statistics for prediction
 ## 4.1 CPU time
 In *time_all_stats_pred.sh* file adjust job results root directory, DIR and slides type, PREFIX (normal, test or tumor), like below:  
