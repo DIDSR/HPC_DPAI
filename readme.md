@@ -1,7 +1,7 @@
 [1 Image patch extraction](#1-image-patch-extraction)   
 [2 Prediction](#2-prediction)  
 [3 Heatmap stitching](#3-heatmap-stitching)  
-[4 Retreiving run-time statistics for prediction](#4-Retreiving run-time statistics-for-prediction)  
+[4 Retreiving run-time statistics for prediction](#4-Retreiving-run-time-statistics-for-prediction)  
 
 
 # 1 Image patch extraction
