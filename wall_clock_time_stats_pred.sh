@@ -1,9 +1,12 @@
-# DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process/wnorm_448_400_7689398
-# SUBDIRS=`ls -1 $DIR`
+# DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_False/testing_wnorm_448_400_7694088
+# DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_True/testing_wnorm_448_400_7694222
 
-DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_False/testing_wnorm_448_400_7694088
+# DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_True/tumor_wnorm_448_400_7694290
+# PREFIX=tumor
 
-PREFIX=test
+DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_True/normal_wnorm_448_400_7694229
+PREFIX=normal
+
 SUBDIRS=`ls -1 $DIR | grep $PREFIX`
 
 STAT_FILE=timing_pred.txt
