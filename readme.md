@@ -9,10 +9,10 @@
 - Adjust configuration parameters in files *config_testing.txt*, *config_normal.txt* and *config_tumor.txt* located at the <a href="https://github.com/DIDSR/HPC_DPAI"> root </a> directory of the codes.
 - Run the commands listed in the following subsections to launch Son of Grid Engine (SGE) jobs to extract, group patches in HDF5 files and create a lookup table for every HDF5 file. 
 ## 1.1 Extract and group
-- qsub split_main.sh ./config_testing.txt  
+- qsub image_patch_extract/split_main.sh ./config_testing.txt  
 -- *split_main.sh* in turn submits *split_grp.sh* which in turns runs *split_grp.py* in array job fashion. Every task in the array job processes one slide.
-- qsub split_main.sh ./config_normal.txt  
-- qsub split_main.sh ./config_tumor.txt  
+- qsub image_patch_extract/split_main.sh ./config_normal.txt  
+- qsub image_patch_extract/split_main.sh ./config_tumor.txt  
 
 The \*.sh files mentioned in this section are located under <a href="https://github.com/DIDSR/HPC_DPAI/tree/master/image_patch_extract">image_patch_extract</a> directory while the config_*.txt files are at the <a href="https://github.com/DIDSR/HPC_DPAI"> root </a> directory of the codes.
 ## 1.2 Create lookup tables
