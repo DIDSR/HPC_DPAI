@@ -25,7 +25,7 @@ The lookup tables are created only once and used at [Prediction](#2-prediction) 
 The \*.sh file mentioned in this section is located under <a href="https://github.com/DIDSR/HPC_DPAI/tree/master/image_patch_extract">image_patch_extract</a> directory while the config_*.txt files are located at the <a href="https://github.com/DIDSR/HPC_DPAI"> root </a> directory of the codes.
 
 # 2 Prediction
-- Additionally adjust configuration parameters in files, *config_testing_cn_true.txt*, *config_normal_cn_true.txt*, *config_tumor_cn_true.txt*.
+- Additionally adjust configuration parameters in files, *config_testing_cn_true.txt*, *config_normal_cn_true.txt*, *config_tumor_cn_true.txt* located at at the <a href="https://github.com/DIDSR/HPC_DPAI"> root </a> directory of the codes.
 - Run commands listed in the below subsections to launch SGE jobs to generate prediction matrices.
 ## 2.1 With color normalization
 - qsub process_main.sh ./config_testing_cn_true.txt  
