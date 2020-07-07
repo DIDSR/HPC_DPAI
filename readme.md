@@ -43,18 +43,18 @@ The \*.sh files mentioned in sections 2.1 and 2.2  below are located under <a hr
 
 # 3 Heatmap stitching
 After the predictions matrices have been generated an SGE job using *heatmap_main.sh* SGE scrip could be launched to genertae heatmaps. Two arguments for this launch are: a) type of the slides (test, normal or tumor); b) the root directory of the results, like in below example run:  
-- qsub heatmap_main.sh test /scratch/mikem/UserSupport/weizhe.li/runs_process_cn_True/testing_wnorm_448_400_7690953  
+- qsub heatmap_main.sh test results_directory  
 -- *heatmap_main.sh* in turn calls *heatmap_arr.sh* which runs *heatmap_assembly.py* for the heatmap stitching of all slides in parallel/scalable manner.
 # 4 Retreiving run-time statistics for prediction
 ## 4.1 CPU time
 In *time_all_stats_pred.sh* file adjust job results root directory, DIR and slides type, PREFIX (normal, test or tumor), like below:  
-- DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_False/normal_wnorm_448_400_7691563  
+- DIR=results_directory  
 - PREFIX=normal  
 Then run:  
 - time bash ./time_all_stats_pred.sh
 ## 4.2 Wall-Clock time
 In *wall_clock_time_stats_pred.sh* file adjust job results root directory, DIR and slides type, PREFIX (normal, test or tumor), like below:  
-- DIR=/scratch/mikem/UserSupport/weizhe.li/runs_process_cn_V2_False/testing_wnorm_448_400_7694088  
+- DIR=results_directory  
 - PREFIX=test  
 Then run:  
 - time bash ./wall_clock_time_stats_pred.sh  
