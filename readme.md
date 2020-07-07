@@ -31,15 +31,15 @@ The \*.sh file mentioned in this section is located under <a href="https://githu
 The \*.sh files mentioned in sections 2.1 and 2.2  below are located under <a href="https://github.com/DIDSR/HPC_DPAI/tree/master/prediction">prediction</a> directory while the config_*.txt files are at the <a href="https://github.com/DIDSR/HPC_DPAI"> root </a> directory of the codes.
 
 ## 2.1 With color normalization
-- qsub process_main.sh ./config_testing_cn_true.txt  
+- qsub prediction/process_main.sh ./config_testing_cn_true.txt  
 -- *process_main.sh* in turn submits a number of SGE jobs using *process_array.sh* which in turn runs *process_images_grp_normalization_wli.py* in the array jobs generated for every slide. Number of tasks in an array job determined automatically based on the number of groups in the corresponding HDF5 file.
-- qsub process_main.sh ./config_normal_cn_true.txt  
-- qsub process_main.sh ./config_tumor_cn_true.txt  
+- qsub prediction/process_main.sh ./config_normal_cn_true.txt  
+- qsub prediction/process_main.sh ./config_tumor_cn_true.txt  
 
 ## 2.2 Without color normalization 
-- qsub process_main.sh ./config_testing.txt  
-- qsub process_main.sh ./config_normal.txt  
-- qsub process_main.sh ./config_tumor.txt  
+- qsub prediction/process_main.sh ./config_testing.txt  
+- qsub prediction/process_main.sh ./config_normal.txt  
+- qsub prediction/process_main.sh ./config_tumor.txt  
 
 # 3 Heatmap stitching
 After the predictions matrices have been generated an SGE job using *heatmap_main.sh* SGE scrip could be launched to genertae heatmaps. Two arguments for this launch are: a) type of the slides (test, normal or tumor); b) the root directory of the results, like in below example run:  
