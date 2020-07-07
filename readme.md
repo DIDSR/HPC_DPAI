@@ -16,9 +16,9 @@
 
 The \*.sh files mentioned in this section are located under <a href="https://github.com/DIDSR/HPC_DPAI/tree/master/image_patch_extract">image_patch_extract</a> directory while the config_*.txt files are at the <a href="https://github.com/DIDSR/HPC_DPAI"> root </a> directory of the codes.
 ## 1.2 Create lookup tables
-- bash create_lookup_grp.sh ./config_testing.txt  
-- bash create_lookup_grp.sh ./config_normal.txt  
-- bash create_lookup_grp.sh ./config_tumor.txt  
+- bash image_patch_extract/create_lookup_grp.sh ./config_testing.txt  
+- bash image_patch_extract/create_lookup_grp.sh ./config_normal.txt  
+- bash image_patch_extract/create_lookup_grp.sh ./config_tumor.txt  
 
 The lookup tables are created only once and used at [Prediction](#2-prediction) stage for launching array job tasks. These tasks are run in parallel and scalable manner - if there are not enough resourcs for running all tasks then they are queued up automatically and started as resources become available. Each task processes only one group. 
 
