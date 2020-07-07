@@ -67,5 +67,5 @@ Run *time_stats_sg_V2.sh* Linux scrip with two arguments: a) type of slides (tes
 - time bash time_stats_sg_V2.sh [test | normal | tumor] ROOT_DIR  
 
 An example run:  
-- time bash wall_clock_time_split_group_V2.sh test /scratch/mikem/UserSupport/weizhe.li/runs_split_group/448_400_7691440  
+- time bash wall_clock_time_split_group_V2.sh test results_directory  
 
