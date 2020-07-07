@@ -14,7 +14,7 @@
 - qsub split_main.sh ./config_normal.txt  
 - qsub split_main.sh ./config_tumor.txt  
 
-The \*.sh files mentioned above are located under <a href="https://github.com/DIDSR/HPC_DPAI/tree/master/image_patch_extract">image_patch_extract</a> while the config_*.txt files are at the root directory of the codes.
+The \*.sh files mentioned above are located under <a href="https://github.com/DIDSR/HPC_DPAI/tree/master/image_patch_extract">image_patch_extract</a> while the config_*.txt files are at the <a href="https://github.com/DIDSR/HPC_DPAI"> root directory </a> of the codes.
 ## 1.2 Create lookup tables
 - bash create_lookup_grp.sh ./config_testing.txt  
 - bash create_lookup_grp.sh ./config_normal.txt  
