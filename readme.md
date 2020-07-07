@@ -13,7 +13,8 @@
 -- *split_main.sh* in turn submits *split_grp.sh* which in turns runs *split_grp.py* in array job fashion. Every task in the array job processes one slide.
 - qsub split_main.sh ./config_normal.txt  
 - qsub split_main.sh ./config_tumor.txt  
-The files mentioned above are located under https://github.com/DIDSR/HPC_DPAI/tree/master/image_patch_extract.
+
+The files mentioned above are located under <a href="https://github.com/DIDSR/HPC_DPAI/tree/master/image_patch_extract">image_patch_extract</a>.
 ## 1.2 Create lookup tables
 - bash create_lookup_grp.sh ./config_testing.txt  
 - bash create_lookup_grp.sh ./config_normal.txt  
