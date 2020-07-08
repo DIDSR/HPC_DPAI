@@ -64,7 +64,7 @@ Then run:
 
 # 5 Retreiving wall-clock time statistics for extraction and grouping
 Run *time_stats_sg_V2.sh* Linux scrip with two arguments: a) type of slides (test, normal or tumor) and b) the root directory of the results:
-- time bash time_stats_sg_V2.sh [test | normal | tumor] ROOT_DIR  
+- time bash time_stats_sg_V2.sh [test | normal | tumor] DIR  
 
 An example run:  
 - time bash wall_clock_time_split_group_V2.sh test results_directory  
